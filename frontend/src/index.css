@@ -14,7 +14,17 @@ body {
 ::-webkit-scrollbar-thumb:hover { background: #dcd6cb; }
 
 @keyframes pulse-fault {
-  0%, 100% { fill-opacity: 1; stroke-opacity: 1; }
-  50% { fill-opacity: 0.3; stroke-opacity: 0.3; }
+  0%, 100% { opacity: 1; stroke-width: 4px; }
+  50% { opacity: 0.3; stroke-width: 7px; }
 }
-.pulse-fault { animation: pulse-fault 1.8s ease-in-out infinite; }
+.pulse-fault {
+  animation: pulse-fault 1.2s ease-in-out infinite;
+}
+
+@keyframes pulse-halo {
+  0%, 100% { r: 18px; opacity: 0.8; }
+  50% { r: 26px; opacity: 0.2; }
+}
+.pulse-halo {
+  animation: pulse-halo 1.5s ease-in-out infinite;
+}
