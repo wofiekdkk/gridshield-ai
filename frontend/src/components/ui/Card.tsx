@@ -9,14 +9,14 @@ interface Props {
 
 export default function Card({ title, children, action, className = "" }: Props) {
   return (
-    <div className={`bg-grid-card border border-grid-border rounded-lg ${className}`}>
+    <div className={`bg-white border border-gp-border rounded-xl shadow-soft ${className}`}>
       {(title || action) && (
-        <div className="flex items-center justify-between px-4 py-3 border-b border-grid-border">
-          {title && <h3 className="text-sm font-semibold text-grid-text uppercase tracking-wide">{title}</h3>}
+        <div className="flex items-center justify-between px-5 py-3.5 border-b border-gp-border">
+          {title && <h3 className="text-sm font-bold text-gp-text">{title}</h3>}
           {action}
         </div>
       )}
-      <div className="p-4">{children}</div>
+      <div className="p-5">{children}</div>
     </div>
   );
 }

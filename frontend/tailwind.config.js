@@ -4,22 +4,25 @@ export default {
   theme: {
     extend: {
       colors: {
-        grid: {
-          bg: "#f7f5f0",      // Soft warm linen background
-          panel: "#f0ede6",   // Warm stone side panel
-          card: "#ffffff",    // Crisp white minimalist cards
-          border: "#e6e1d8",  // Delicate sand-gray lines
-          text: "#2b2927",    // Deep charcoal typography
-          muted: "#827a73",   // Muted clay gray
-          accent: "#b57c5b",  // Soft terracotta accent
-          success: "#5f7d61", // Sage green
-          warning: "#c9a054", // Soft ochre yellow
-          danger: "#b55b5b",  // Soft terrarosa red
-          recovery: "#4a707a", // Washed slate teal
+        gp: {
+          bg: "#f0f5fa",
+          sidebar: "#ffffff",
+          card: "#ffffff",
+          border: "#e2eaf2",
+          text: "#1e293b",
+          muted: "#64748b",
+          primary: "#3b82f6",
+          primarySoft: "#eff6ff",
+          accent: "#8b5cf6",
+          success: "#10b981",
+          warning: "#f59e0b",
+          danger: "#ef4444",
+          teal: "#14b8a6",
         }
       },
-      fontFamily: {
-        mono: ["Courier New", "Courier", "monospace"],
+      boxShadow: {
+        soft: "0 1px 3px 0 rgba(0,0,0,0.04), 0 1px 2px 0 rgba(0,0,0,0.03)",
+        card: "0 4px 6px -1px rgba(0,0,0,0.04), 0 2px 4px -2px rgba(0,0,0,0.03)",
       }
     },
   },
